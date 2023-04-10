@@ -39,7 +39,7 @@ https://maelikah.github.io/M5_WorkdayScheduler
 Here is a screenshot of the deployed webpage for reference:
 
 
-![Screenshot](Assets/images/screenshot.png)
+![Screenshot](./assets/images/screenshot.png)
 
 
 ## Credits
