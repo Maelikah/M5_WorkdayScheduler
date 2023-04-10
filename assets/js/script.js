@@ -12,6 +12,16 @@ $("#currentDay").text(today.format("dddd, MMMM D YYYY"));
 $(document).ready(function() {
   // Call the updateSchedule function when the page loads to get div styles
   updateSchedule ();
+
+  // Retrieve stored values from local storage and set them as the values of the text areas
+  $(".description").each(function() {
+    var timeslot = $(this).closest(".time-block").attr("id");
+    var storedTask = localStorage.getItem(timeslot);
+    if (storedTask !== null) {
+      $(this).val(storedTask);
+    }
+  });
+
   // Create a function to check the time every minute
   setInterval(function(){
     updateSchedule();
@@ -35,7 +45,7 @@ $(document).ready(function() {
     console.log(task); 
     
     // check if there is any text
-    if (text !== "") {
+    if (task !== "") {
       // Add timeslot and task values into local storage
       localStorage.setItem(timeslot, task); 
     }
