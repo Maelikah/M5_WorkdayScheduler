@@ -50,6 +50,11 @@ Here is a screenshot of the deployed webpage for reference:
 - https://getbootstrap.com/docs/
 - https://learn.jquery.com/using-jquery-core/document-ready/
 - https://api.jquery.com/
+- https://metafizzy.co/blog/this-in-event-listeners/
+- https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
+- https://api.jquery.com/closest/
+- 
+
 
 ## License
 ---

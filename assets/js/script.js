@@ -16,6 +16,30 @@ $(document).ready(function() {
   setInterval(function(){
     updateSchedule();
   },60000);
+
+  // TODO: Add a listener for click events on the save button. This code should use the id in the containing 
+  // time-block as a key to save the user input in local storage
+
+  $(".saveBtn").on("click", function() {
+    // When a button is clicked, we use $(this) to refer to the specific button that was clicked. 
+    // Then, we use .closest(".time-block") to find the nearest ancestor element with the class "time-block"
+    // This will be the div that contains the hour id. We use .attr("id") to get the id of that div
+    // This will be the hour in the format "hour-<hour>". We assign this value to the timeslot variable.
+    var timeslot = $(this).closest(".time-block").attr("id"); 
+    console.log(timeslot);
+    // We use $(this).siblings(".description") to find the textarea that is a sibling of the button that was clicked. 
+    // We use .val() to get the value of the textarea, which will be the text that the user entered. 
+    // We use .trim() to remove any leading or trailing white space from the text. 
+    // We assign this value to the task variable.
+    var task = $(this).siblings(".description").val().trim();
+    console.log(task); 
+    
+    // check if there is any text
+    if (text !== "") {
+      // Add timeslot and task values into local storage
+      localStorage.setItem(timeslot, task); 
+    }
+  });
 });
 
   // Create function updateSchedule() that will check the current time vs the div id value for each hour in the
@@ -44,18 +68,15 @@ $(document).ready(function() {
   }
 }
   
+// Add event listener for save button
 
 
 
 
 
 
-  // TODO: Add a listener for click events on the save button. This code should
-  // use the id in the containing time-block as a key to save the user input in
-  // local storage. HINT: What does `this` reference in the click listener
-  // function? How can DOM traversal be used to get the "hour-x" id of the
-  // time-block containing the button that was clicked? How might the id be
-  // useful when saving the description in local storage?
+
+
   //
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
