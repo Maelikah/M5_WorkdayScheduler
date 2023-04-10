@@ -4,9 +4,9 @@
   --hourbgc:#332b16;
   --hourborderbgc: #221c0e;
   --icons: #c1a805;
-  --pastbgc:#efe3da;
-  --presentbgc:#beaa64;
-  --futurebgc:#8c5435;
+  --pastbgc:#e0d5b7;
+  --presentbgc:#947d3f;
+  --futurebgc:#c7b37e;
 
 }
 
@@ -21,7 +21,7 @@ textarea {
   font-family: 'Gloria Hallelujah', cursive;
   border: none;
   resize: none;
-  color: #000000;
+  color: black;
   padding: 10px;
 }
 
