@@ -1,5 +1,6 @@
 /* Add color palette variables */ 
 :root {
+  --headerbgc: #193842;
   --bodybgc: #f1ecdf;
   --hourbgc:#332b16;
   --hourborderbgc: #221c0e;
@@ -46,21 +47,6 @@ textarea {
   padding: 5px;
 }
 
-/* .past {
-  background-color: var(--pastbgc);
-  color: white;
-}
-
-.present {
-  background-color: var(--presentbgc);
-  color: white;
-}
-
-.future {
-  background-color: var(--futurebgc);
-  color: white;
-} */
-
 .saveBtn {
   font-size: 20px;
   border-top: 5px solid var(--hourborderbgc);
@@ -103,5 +89,10 @@ textarea {
   font-size: 30px;
   transition: all 0.3s ease-in-out;
   color: var(--icons);
+}
+
+#header {
+  background-color: var(--headerbgc);
+  color: white;
 }
 
