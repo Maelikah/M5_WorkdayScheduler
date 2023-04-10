@@ -1,0 +1,75 @@
+:root {
+  --bodybgc: #f1ecdf;
+  --hourbgc:#332b16;
+  --hourborderbgc: #221c0e;
+  --pastbgc:#efe3da;
+  --presentbgc:#beaa64;
+  --futurebgc:#8c5435;
+
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  background-color: var(--bodybgc);
+}
+
+textarea {
+  background: transparent;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.5rem;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 10px solid var(--hourborderbgc);
+  padding: 10px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 5px solid var(--bodybgc);
+}
+
+.hour {
+  background-color: var(--hourbgc);
+  color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  
+  
+}
+
+.past {
+  background-color: var(--pastbgc);
+  color: white;
+}
+
+.present {
+  background-color: var(--presentbgc);
+  color: white;
+}
+
+.future {
+  background-color: var(--futurebgc);
+  color: white;
+}
+
+.saveBtn {
+  border-left: 10px solid var(--hourborderbgc);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--hourbgc);
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
