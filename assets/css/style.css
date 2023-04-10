@@ -46,7 +46,7 @@ textarea {
   padding: 5px;
 }
 
-.past {
+/* .past {
   background-color: var(--pastbgc);
   color: white;
 }
@@ -59,7 +59,7 @@ textarea {
 .future {
   background-color: var(--futurebgc);
   color: white;
-}
+} */
 
 .saveBtn {
   border-top: 5px solid var(--hourborderbgc);
@@ -103,8 +103,3 @@ textarea {
   color: var(--icons);
 }
 
-@include media-breakpoint-up(sm) {
-  .custom-class {
-    display: block;
-  }
-}

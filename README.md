@@ -1,37 +1,40 @@
-# <Your-Project-Title>
+# Work Day Scheduler
 
 ## Description
 ---
-Code Quiz Challenge. The purpose is to generate a JavaScript fundamentals quiz that uses local storage to store highscores and user initials, that shows a timer and alerts the user whether the selected choice was the correct or incorrect answer.
+Work Day Scheduler Challenge. The purpose is to generate a workday scheduler that uses local storage to store tasks, that shows the current date and that shows different colors for past, present and future timeslots based on the current time. It also allows the user to delete contents from the local storage.
 
 ## Installation
 ---
-Installation not required, simply open up the JavaScript Fundamentals html file and click on the Start Quiz button. Answer the questions and submit your initials upon completion. Review highscores and clear the list if desired.
+Installation not required, simply open up the Work Day Scheduler html file and select an hour. You can review past annotations, you can add annotations and you can delete the contents of any timeslot if desired.
 
 ## Usage
 ---
 
-- GIVEN I am taking a code quiz
-    - WHEN I click the start button
-        - THEN a timer starts and I am presented with a question
-    - WHEN I answer a question
-        - THEN I am presented with another question
-    - WHEN I answer a question incorrectly
-        - THEN time is subtracted from the clock
-    - WHEN all questions are answered or the timer reaches 0
-        - THEN the game is over
-    - WHEN the game is over
-        - THEN I can save my initials and my score
+- GIVEN I am using a daily planner to create a schedule
+    - WHEN I open the planner
+        - THEN the current day is displayed at the top of the calendar
+    - WHEN I scroll down
+        - THEN I am presented with timeblocks for standard business hours
+    - WHEN I view the timeblocks for that day
+        - THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+    - WHEN I click into a timeblock
+        - THEN I can enter an event
+    - WHEN I click the save button for that timeblock
+        - THEN the text for that event is saved in local storage
+    - WHEN I refresh the page
+        - THEN the saved events persist
+
 
 ---
 
 The github URL containing the code for this challenge is located at:
 
-https://github.com/Maelikah/M4_JavaScriptFundamentalsQuiz
+https://github.com/Maelikah/M5_WorkdayScheduler
 
 The github pages URL containing the deployed webpage is located at:
 
-https://maelikah.github.io/M4_JavaScriptFundamentalsQuiz
+https://maelikah.github.io/M5_WorkdayScheduler
 
 Here is a screenshot of the deployed webpage for reference:
 
@@ -41,12 +44,12 @@ Here is a screenshot of the deployed webpage for reference:
 
 ## Credits
 ---
-- https://www.w3schools.com/js/js_timing.asp
-- https://blog.logrocket.com/localstorage-javascript-complete-guide/
-- https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/
-- https://www.freecodecamp.org/news/javascript-dom-manipulation/
-- https://www.scaler.com/topics/javascript-dom-manipulation/
-- https://emojicombos.com/
+- https://icolorpalette.com/color/cloud-cream
+- https://day.js.org/docs/en/get-set/hour
+- https://www.w3schools.com/jquery
+- https://getbootstrap.com/docs/
+- 
+- 
 
 ## License
 ---
