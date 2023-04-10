@@ -16,25 +16,33 @@ $(document).ready(function() {
   setInterval(function(){
     updateSchedule();
   },60000);
+});
+
   // Create function updateSchedule() that will check the current time vs the div id value for each hour in the
   // schedule from 7 to 18.
+  function updateSchedule () {
 
   // Declare variable to get current hour from dayjs
   var currentHour = dayjs().hour();
 
   // Create a loop that will check all div containers that have ids matching "hour-7 to hour-18" 
   for (var hour = 7; hour <= 18; hour++) {
+    
+    // Create variable that will be used to compare divid vs current hour
     var divId = "hour-" + hour;
-
+    
+    // If the div id value is lesser than the current hour, then apply limescent color from icolorpalette.com
+    if (hour < currentHour) {
+      $("#" + divId).css ({"background-color": "var(--pastbgc)", "color": "black"});
+    // If the div id value is equal to the current hour, then apply manticore brown color from icolorpalette.com
+    } else if (hour == currentHour) {
+      $("#" + divId).css ({"background-color": "var(--presentbgc)", "color": "black"});
+    // If the div id value is greater than the current hour, then apply Butterbrot color from icolorpalette.com
+    } else {
+      $("#" + divId).css ({"background-color": "var(--futurebgc)", "color": "black"});
+    }
   }
-
-
-
-  // If the div id value is lesser than the current hour, then apply limescent color from icolorpalette.com
-  // If the div id value is equal to the current hour, then apply manticore brown color from icolorpalette.com
-  // Of the div id value is greater than the current hour, then apply Butterbrot color from icolorpalette.com
-
-});
+}
   
 
 
