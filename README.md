@@ -53,8 +53,6 @@ Here is a screenshot of the deployed webpage for reference:
 - https://metafizzy.co/blog/this-in-event-listeners/
 - https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
 - https://api.jquery.com/closest/
-- 
-
 
 ## License
 ---

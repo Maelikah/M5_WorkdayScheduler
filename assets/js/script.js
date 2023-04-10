@@ -78,7 +78,7 @@ $(document).ready(function() {
   // Create a loop that will check all div containers that have ids matching "hour-7 to hour-18" 
   for (var hour = 7; hour <= 18; hour++) {
     
-    // Create variable that will be used to compare divid vs current hour
+    // Create variable that will be used to compare divid vs current hour.
     var divId = "hour-" + hour;
     
     // If the div id value is lesser than the current hour, then apply limescent color from icolorpalette.com

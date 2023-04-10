@@ -10,7 +10,6 @@
   --pastbgc:#e0d5b7;
   --presentbgc:#947d3f;
   --futurebgc:#c7b37e;
-
 }
 
 body {
@@ -95,4 +94,3 @@ textarea {
   background-color: var(--headerbgc);
   color: white;
 }
-
