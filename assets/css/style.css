@@ -6,7 +6,7 @@
   --savebtn: #1f3213;
   --delbtn: #700808 ;
   --hourborderbgc: #221c0e;
-  --icons: #c1a805;
+  --icons: #f9b000;
   --pastbgc:#e0d5b7;
   --presentbgc:#947d3f;
   --futurebgc:#c7b37e;
@@ -67,7 +67,7 @@ textarea {
 .saveBtn i:hover {
   font-size: 30px;
   transition: all 0.3s ease-in-out;
-  color: var(--bodybgc);
+  color: var(--icons);
 }
 
 .delBtn {
@@ -88,7 +88,7 @@ textarea {
 .delBtn i:hover {
   font-size: 30px;
   transition: all 0.3s ease-in-out;
-  color: var(--bodybgc);
+  color: var(--icons);
 }
 
 #header {
