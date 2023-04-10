@@ -48,8 +48,8 @@ Here is a screenshot of the deployed webpage for reference:
 - https://day.js.org/docs/en/get-set/hour
 - https://www.w3schools.com/jquery
 - https://getbootstrap.com/docs/
-- 
-- 
+- https://learn.jquery.com/using-jquery-core/document-ready/
+- https://api.jquery.com/
 
 ## License
 ---
