@@ -2,6 +2,9 @@
 var today = dayjs();
 // console log to see if desired format has been achieved
 console.log(today.format("dddd, MMMM D YYYY"));
+
+// TODO: Add code to display the current date in the header of the page.
+
 // Add today's date to the header
 $("#currentDay").text(today.format("dddd, MMMM D YYYY")); 
 
@@ -12,6 +15,8 @@ $("#currentDay").text(today.format("dddd, MMMM D YYYY"));
 $(document).ready(function() {
   // Call the updateSchedule function when the page loads to get div styles
   updateSchedule ();
+
+  // TODO: Add code to get any user input that was saved in localStorage and set the values of the corresponding textarea elements.
 
   // Retrieve stored values from local storage and set them as the values of the text areas
   $(".description").each(function() {
@@ -50,7 +55,18 @@ $(document).ready(function() {
       localStorage.setItem(timeslot, task); 
     }
   });
+
+// Bonus TODO: Add event listener to delete tasks inside text areas
+
+  $(".delBtn").on("click", function() {
+    var deltimeSlot = $(this).closest(".time-block").attr("id"); 
+    console.log(deltimeSlot);
+    localStorage.removeItem(deltimeSlot);
+    $(this).siblings(".description").val("");
+  });
 });
+
+  // TODO: Add code to apply the past, present, or future class to each time-block by comparing the id to the current hour.
 
   // Create function updateSchedule() that will check the current time vs the div id value for each hour in the
   // schedule from 7 to 18.
@@ -77,26 +93,3 @@ $(document).ready(function() {
     }
   }
 }
-  
-// Add event listener for save button
-
-
-
-
-
-
-
-
-  //
-  // TODO: Add code to apply the past, present, or future class to each time
-  // block by comparing the id to the current hour. HINTS: How can the id
-  // attribute of each time-block be used to conditionally add or remove the
-  // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
-  // TODO: Add code to display the current date in the header of the page.
-
