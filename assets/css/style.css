@@ -3,6 +3,7 @@
   --bodybgc: #f1ecdf;
   --hourbgc:#332b16;
   --hourborderbgc: #221c0e;
+  --icons: #c1a805;
   --pastbgc:#efe3da;
   --presentbgc:#beaa64;
   --futurebgc:#8c5435;
@@ -22,7 +23,6 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 10px solid var(--hourborderbgc);
   padding: 10px;
 }
 
@@ -40,9 +40,12 @@ textarea {
 
 .hour {
   background-color: var(--hourbgc);
+  
   color: white;
+  border: 5px solid var(--hourborderbgc);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  padding: 5px;
   
   
 }
@@ -63,14 +66,49 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 10px solid var(--hourborderbgc);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top: 5px solid var(--hourborderbgc);
+  border-bottom: 5px solid var(--hourborderbgc);
+  border-left: 5px solid var(--hourborderbgc);
+  border-right: 2.5px solid var(--hourborderbgc);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  
+
   background-color: var(--hourbgc);
+  color: white;
+}
+.saveBtn:hover {
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 25px;
   transition: all 0.3s ease-in-out;
+  color: var(--icons);
+}
+
+.delBtn {
+  border-top: 5px solid var(--hourborderbgc);
+  border-bottom: 5px solid var(--hourborderbgc);
+  border-right: 5px solid var(--hourborderbgc);
+  border-left: 2.5px solid var(--hourborderbgc);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #5c5c5c;
+  color: white;
+}
+.delBtn:hover {
+  color: white;
+}
+
+.delBtn i:hover {
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+  color: var(--icons);
+}
+
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
 }
