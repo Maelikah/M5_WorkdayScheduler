@@ -22,10 +22,13 @@ Installation not required, simply open up the Work Day Scheduler html file and s
         - THEN I can enter an event
     - WHEN I click the save button for that timeblock
         - THEN the text for that event is saved in local storage
+        - <span style="color:#140278"><b>THEN a notification message confirming data has been saved is displayed for 2 seconds</b></span>
+    - <span style="color:#140278"><b>WHEN I click the delete button for that timeblock</b></span>
+        - <span style="color:#140278"><b>THEN the text for that event is deleted from local storage</b></span>
+        - <span style="color:#140278"><b>THEN a notification message confirming data has been deleted is displayed for 2 seconds</b></span>
     - WHEN I refresh the page
         - THEN the saved events persist
-
-
+    
 ---
 
 The github URL containing the code for this challenge is located at:
