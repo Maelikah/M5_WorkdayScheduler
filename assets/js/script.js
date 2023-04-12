@@ -53,6 +53,11 @@ $(document).ready(function() {
     if (task !== "") {
       // Add timeslot and task values into local storage
       localStorage.setItem(timeslot, task); 
+      // Add notification related to data being saved
+      $("#storageAlert").text("💾 Your entry has been saved 💾");
+      // Make notification related to data stored disappear after 1.5 seconds
+      setTimeout(function(){$("#storageAlert").text("");
+      },1500);
     }
   });
 
@@ -60,9 +65,18 @@ $(document).ready(function() {
 
   $(".delBtn").on("click", function() {
     var deltimeSlot = $(this).closest(".time-block").attr("id"); 
-    console.log(deltimeSlot);
-    localStorage.removeItem(deltimeSlot);
-    $(this).siblings(".description").val("");
+    console.log("Variable deltimeSlot is: " + deltimeSlot);
+    var task = $(this).siblings(".description").val().trim();
+    // check if there is any text
+    if (task !== "") {
+      localStorage.removeItem(deltimeSlot);
+      $(this).siblings(".description").val("");
+      // Add notification related to data being deleted
+      $("#storageAlert").text("🗑️ Your entry has been deleted 🗑️");
+      // Make notification related to deleted data disappear after 1.5 seconds
+      setTimeout(function(){$("#storageAlert").text("");
+      },1500);
+    }
   });
 });
 
